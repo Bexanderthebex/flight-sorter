@@ -1,4 +1,4 @@
-package internal
+package sorter
 
 import (
 	"github.com/Bexanderthebex/flight-finder/pkg"

@@ -1,15 +1,22 @@
 package main
 
 import (
+	"github.com/Bexanderthebex/flight-finder/api"
+	"github.com/brpaz/echozap"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
+	"go.uber.org/zap"
 )
 
 func main() {
 	e := echo.New()
 
-	e.Use(middleware.Logger())
+	zapLogger, _ := zap.NewProduction()
+
+	e.Use(echozap.ZapLogger(zapLogger))
 	e.Use(middleware.Recover())
 
-	// e.GET("/calculate", )
+	e.POST("/calculate", api.SortFlights)
+
+	e.Logger.Fatal(e.Start(":8080"))
 }
