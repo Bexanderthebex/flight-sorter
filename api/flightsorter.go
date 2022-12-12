@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Bexanderthebex/flight-finder/internal/sorter"
+	"github.com/Bexanderthebex/flight-sorter/internal/sorter"
 	"github.com/labstack/echo/v4"
 )
 

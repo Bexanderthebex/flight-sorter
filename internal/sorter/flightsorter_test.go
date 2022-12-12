@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Bexanderthebex/flight-finder/pkg"
+	"github.com/Bexanderthebex/flight-sorter/pkg"
 )
 
 func TestTopologicalSort(t *testing.T) {

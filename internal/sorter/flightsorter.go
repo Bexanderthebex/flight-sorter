@@ -1,7 +1,7 @@
 package sorter
 
 import (
-	"github.com/Bexanderthebex/flight-finder/pkg"
+	"github.com/Bexanderthebex/flight-sorter/pkg"
 )
 
 type Flight struct {

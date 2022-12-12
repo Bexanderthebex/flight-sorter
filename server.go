@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Bexanderthebex/flight-finder/api"
+	"github.com/Bexanderthebex/flight-sorter/api"
 	"github.com/brpaz/echozap"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"

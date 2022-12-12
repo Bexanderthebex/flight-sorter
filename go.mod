@@ -1,4 +1,4 @@
-module github.com/Bexanderthebex/flight-finder
+module github.com/Bexanderthebex/flight-sorter
 
 go 1.19
 
