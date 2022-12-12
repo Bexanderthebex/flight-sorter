@@ -17,7 +17,7 @@ func SortFlights(ctx echo.Context) error {
 	flightsToSort := make([]sorter.Flight, 0, len(flightInput))
 	for _, f := range flightInput {
 		inputLength := len(f)
-		if inputLength > 2 || inputLength < 2 {
+		if inputLength != 2 {
 			return echo.NewHTTPError(http.StatusBadRequest, fmt.Sprintf("invalid input format, expecting 2 array elements but got %d", inputLength))
 		}
 
